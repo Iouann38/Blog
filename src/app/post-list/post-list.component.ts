@@ -8,8 +8,8 @@ import { Post } from '../post';
 })
 export class PostListComponent implements OnInit {
 
-  @Input() unTitre : string;
-  @Input() desPosts: Array<Post>;
+  @Input() titre : string;
+  @Input() T_Posts: Array<Post>;
 
   constructor() { }
 

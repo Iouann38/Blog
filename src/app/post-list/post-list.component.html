@@ -2,9 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2>{{unTitre}}</h2>
+        <h2>{{titre}}</h2>
         <ul class="list-group">
-          <app-post-list-item *ngFor="let lePost of desPosts" [unPost]="lePost">
+          <app-post-list-item *ngFor="let unPost of T_Posts; let i = index" 
+                              [unPost]="unPost"
+                              [index]="i">
           </app-post-list-item>
         </ul>
       </div>

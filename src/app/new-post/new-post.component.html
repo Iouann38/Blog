@@ -1,0 +1,18 @@
+<div class="col-sm-8 col-sm-offset-2">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmitForm()">
+    <div class="form-group">
+      <label for="titre">Titre</label>
+      <input type="text" id="titre" class="form-control" 
+             formControlName="titre" />
+    </div>
+    <div class="form-group">
+      <label for="contenu">Contenu</label>
+      <textarea id="contenu" class="form-control" 
+                formControlName="contenu" 
+                rows="10" cols="30" ></textarea>
+    </div>
+    <button type="submit" 
+            class="btn btn-primary"
+            [disabled]="userForm.invalid">Soumettre</button>
+  </form>
+</div>
